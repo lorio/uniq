@@ -1,0 +1,5 @@
+AddType image/svg+xml svg svgz
+AddEncoding gzip svgz
+
+RewriteEngine On
+RewriteRule ^([a-z]+)/([a-z\-]+)$ /$1/$2.html [L]
