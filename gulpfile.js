@@ -17,7 +17,7 @@ gulp.task('styles', function () {
   return gulp.src('app/styles/main.css')
     .pipe($.sourcemaps.init())
     .pipe($.postcss([
-      require('autoprefixer-core')({browsers: ['last 1 version']})
+      require('autoprefixer-core')({browsers: ['last 2 version', 'safari 5.1', 'ie 10']})
     ]))
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest('.tmp/styles'))
